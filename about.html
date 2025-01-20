@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="about.title">About Me - szyma1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 1.5rem;
+            justify-content: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .hero-section {
+            padding: 2rem;
+            max-width: 1100px;  /* Increased from 800px */
+        }
+        
+        .about-content {
+            max-width: 1000px;  /* Increased from 700px */
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .about-text {
+            max-width: 900px;   /* Increased from 600px */
+            margin: 1rem auto;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;  /* Slightly larger text */
+            padding: 0 1.5rem;  /* Added padding for better readability */
+        }
+
+        .about-text h3 {
+            font-size: 2.2rem;  /* Slightly larger heading */
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-buttons {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container home-container">
+        <section class="hero-section scale-in">
+            <div class="text-glitch" data-lang="about.title">About Me</div>
+            <div class="spark-line"></div>
+            <div class="about-content">
+                <img src="./LOGO.png" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <h3 data-lang="about.greeting">Hi, I'm szyma1</h3>
+                    <p data-lang="about.intro"></p>
+                    <p data-lang="about.skills"></p>
+                    <p data-lang="about.experience"></p>
+                    <p data-lang="about.outro"></p>
+                </div>
+            </div>
+            <div class="lang-switcher centered">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pl">PL</button>
+            </div>
+            <div class="cta-buttons">
+                <a href="index.html" class="cta-button" data-lang="nav.home">Home</a>
+                <a href="projects.html" class="cta-button" data-lang="nav.projects">Projects</a>
+                <a href="contact.html" class="cta-button" data-lang="nav.contact">Contact</a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
