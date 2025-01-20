@@ -94,7 +94,7 @@ const translations = {
         }
     }
 };
-
+ 
 let currentLang = localStorage.getItem('language') || 'en';
 
 document.addEventListener('DOMContentLoaded', () => {
