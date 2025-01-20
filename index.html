@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="portfolio.title">Portfolio - szyma1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 1.5rem;
+            justify-content: center;
+            width: 100%;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container home-container">
+        <section class="hero-section scale-in">
+            <div class="text-glitch" data-text="szyma1">szyma1</div>
+            <div class="spark-line"></div>
+            <p class="typing-text" data-lang="welcomeText">Welcome to my portfolio website</p>
+            <div class="lang-switcher centered">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pl">PL</button>
+            </div>
+            <div class="cta-buttons">
+                <a href="about.html" class="cta-button" data-lang="nav.about">About Me</a>
+                <a href="projects.html" class="cta-button" data-lang="nav.projects">Projects</a>
+                <a href="contact.html" class="cta-button" data-lang="nav.contact">Contact</a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
