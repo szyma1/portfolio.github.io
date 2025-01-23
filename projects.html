@@ -180,88 +180,55 @@
                 min-width: auto;
             }
         }
+
+        @media (max-width: 768px) {
+            .main-container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .cta-buttons {
+                flex-wrap: wrap;
+                padding: 0 0.5rem;
+            }
+
+            .cta-button {
+                padding: 0.5rem;
+                min-width: 120px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <section class="hero-section scale-in">
-            <div class="text-glitch" data-lang="projects.title">Projects</div>
-            <div class="spark?-line"></div>
-            <div class="grid grid-3">
-                <div class="project-card">
-                    <img src="assets/project1.jpg" alt="Portfolio Website">
-                    <h3 data-lang="projects.project1.title">Personal Portfolio</h3>
-                    <p data-lang="projects.project1.desc">Modern portfolio website built with HTML, CSS, and JavaScript.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/yourusername/portfolio" target="_blank">
-                            <i class="fab fa-github"></i> 
-                            <span data-lang="projects.viewCode">View Code</span>
-                        </a>
-                        <a href="https://yourusername.github.io" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> 
-                            <span data-lang="projects.liveDemo">Live Demo</span>
-                        </a>
+        <div class="main-container">
+            <section class="hero-section scale-in">
+                <div class="text-glitch" data-lang="projects.title">Projects</div>
+                <div class="spark-line"></div>
+                <div class="grid grid-3">
+                    <div class="project-card">
+                        <h3 data-lang="projects.project1.title">Weather App</h3>
+                        <p data-lang="projects.project1.desc">Weather application built with Python Flask and SQLite.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-github"></i> 
+                                <span data-lang="projects.viewCode">View Code</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> 
+                                <span data-lang="projects.liveDemo">Live Demo</span>
+                            </a>
+                        </div>
                     </div>
+                    <!-- Add more project cards as needed -->
                 </div>
-                <div class="project-card">
-                    <img src="assets/project2.jpg" alt="Task Manager App">
-                    <h3 data-lang="projects.project2.title">Task Manager App</h3>
-                    <p data-lang="projects.project2.desc">A full-stack task management application built with React and
-                        Node.js. Features user authentication, real-time updates, and data persistence.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/yourusername/task-manager" target="_blank"><i
-                                class="fab fa-github"></i> <span data-lang="projects.viewCode">View Code</span></a>
-                        <a href="https://github.com/yourusername/task-manager" target="_blank"><i
-                                class="fas fa-external-link-alt"></i> <span data-lang="projects.liveDemo">Live
-                                Demo</span></a>
-                    </div>
+                <div class="cta-buttons">
+                    <a href="index.html" class="cta-button">Home</a>
+                    <a href="about.html" class="cta-button">About</a>
+                    <a href="contact.html" class="cta-button">Contact</a>
                 </div>
-                <!-- Add new project card -->
-                <div class="project-card">
-                    <img src="assets/project3.jpg" alt="Quiz Game">
-                    <h3 data-lang="projects.project3.title">Quiz Game</h3>
-                    <p data-lang="projects.project3.desc">Multi-category quiz game using Python for backend, JavaScript for game logic, and SQL for high scores. Includes timer, difficulty levels, and responsive design.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/yourusername/quiz-game" target="_blank">
-                            <i class="fab fa-github"></i> 
-                            <span data-lang="projects.viewCode">View Code</span>
-                        </a>
-                        <a href="https://yourusername.github.io/quiz-game" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> 
-                            <span data-lang="projects.liveDemo">Live Demo</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/project1.jpg" alt="Weather App">
-                    <h3 data-lang="projects.project1.title">Weather App</h3>
-                    <p data-lang="projects.project1.desc">Weather application built with Python Flask and SQLite.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/yourusername/weather-app" target="_blank">
-                            <i class="fab fa-github"></i> 
-                            <span data-lang="projects.viewCode">View Code</span>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> 
-                            <span data-lang="projects.liveDemo">Live Demo</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="lang-switcher centered">
-                <button class="lang-btn" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="pl">PL</button>
-            </div>
-            <div class="cta-buttons">
-                <a href="index.html" class="cta-button" data-lang="nav.home">Home</a>
-                <a href="about.html" class="cta-button" data-lang="nav.about">About Me</a>
-                <a href="contact.html" class="cta-button" data-lang="nav.contact">Contact</a>
-            </div>
-            <script src="script.js"></script>
-        </section>
-        
+            </section>
+        </div>
     </div>
-
 </body>
-
 </html>
